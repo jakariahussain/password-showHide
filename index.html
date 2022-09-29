@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Showing system</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 mt-4">
+                <div class="inputBox">
+                    <input class="form-control" type="password" name="" placeholder="Enter Password" id='password'>
+                    <div class="btn btn-primary" id="toggle" onclick="showHide()">show Hide Password</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/bootstrap.min.js"></script>
+  
+    
+</body>
+</html>
+
+<script>
+    let password = document.getElementById('password')
+    let toggle = document.getElementById('toggle')
+
+    function showHide(){
+        if(password.type === 'password'){
+            password.setAttribute('type', 'text')
+            toggle.classList.add('hide')
+        }else{
+            password.setAttribute('type', 'password')
+            toggle.classList.remove('hide')
+        }
+    }
+</script>

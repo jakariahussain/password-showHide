@@ -1,0 +1,14 @@
+.inputBox{
+    position: relative;
+    width: 40%;
+}
+#toggle{
+    margin-top:10px ;
+    padding: 10px;
+    color: aliceblue;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+input{
+    width: 100%;
+}
